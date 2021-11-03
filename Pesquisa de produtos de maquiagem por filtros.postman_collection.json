@@ -1,0 +1,1490 @@
+{
+	"info": {
+		"_postman_id": "fdac0c3d-8fc7-4b02-a24e-e7d6b0af9042",
+		"name": "Pesquisa de produtos de maquiagem por filtros",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pesquisa de produtos de maquiagem por filtros",
+			"item": [
+				{
+					"name": "caso de teste 1.0 - pequisa por tipo de produto",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeliner",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "eyeliner"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 2.0 - pesquisa por marca de produto",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?brand=e.l.f.",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "e.l.f."
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 2.1 - pesquisa por tipo e marca de produto",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeliner&brand=e.l.f.",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "eyeliner"
+								},
+								{
+									"key": "brand",
+									"value": "e.l.f."
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 3.0 - pesquisa por categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_category=liquid",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_category",
+									"value": "liquid"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 3.1 - pesquisa por tipo e categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeliner&product_category=liquid",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "eyeliner"
+								},
+								{
+									"key": "product_category",
+									"value": "liquid"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 3.2 - pesquisa por marca e categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?brand=e.l.f.&product_category=liquid",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "e.l.f."
+								},
+								{
+									"key": "product_category",
+									"value": "liquid"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 3.3 - pesquisa por tipo, marca e categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeliner&brand=e.l.f.&product_category=liquid",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "eyeliner"
+								},
+								{
+									"key": "brand",
+									"value": "e.l.f."
+								},
+								{
+									"key": "product_category",
+									"value": "liquid"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 4.0 - pesquisa por tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_tags=vegan",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_tags",
+									"value": "vegan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 4.1 - pesquisa por tipo e tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeliner&product_tags=vegan",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "eyeliner"
+								},
+								{
+									"key": "product_tags",
+									"value": "vegan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 4.2 - pesquisa por marca e tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?brand=marienatie&product_tags=vegan",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "marienatie"
+								},
+								{
+									"key": "product_tags",
+									"value": "vegan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 4.3 - pesquisa por categoria e tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_category=lipstick&product_tags=vegan",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_category",
+									"value": "lipstick"
+								},
+								{
+									"key": "product_tags",
+									"value": "vegan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 4.4 - pesquisa por tipo, marca, categoria e tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=lipstick&brand=marienatie&product_category=lipstick&product_tags=vegan",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "lipstick"
+								},
+								{
+									"key": "brand",
+									"value": "marienatie"
+								},
+								{
+									"key": "product_category",
+									"value": "lipstick"
+								},
+								{
+									"key": "product_tags",
+									"value": "vegan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 5.0 - pesquisa por preço (acima de $)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?price_greater_than=10.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "price_greater_than",
+									"value": "10.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 5.1 - pesquisa por tipo e preço (acima de $)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation&price_greater_than=10.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "foundation"
+								},
+								{
+									"key": "price_greater_than",
+									"value": "10.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 5.2 - pesquisa por marca e preço (acima de $)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?brand=glossier&price_greater_than=10.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "glossier"
+								},
+								{
+									"key": "price_greater_than",
+									"value": "10.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 5.3 - pesquisa por categoria e preço (acima de $)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_category=lipstick&price_greater_than=10.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_category",
+									"value": "lipstick"
+								},
+								{
+									"key": "price_greater_than",
+									"value": "10.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 5.4 - pesquisa por tag e preço (acima de $)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_tags=vegan&price_greater_than=10.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_tags",
+									"value": "vegan"
+								},
+								{
+									"key": "price_greater_than",
+									"value": "10.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 5.5 - pesquisa por tipo, marca, categoria, tag e preço (acima de $)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation&brand=colourpop&product_category=liquid&product_tags=vegan&price_greater_than=10.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "foundation"
+								},
+								{
+									"key": "brand",
+									"value": "colourpop"
+								},
+								{
+									"key": "product_category",
+									"value": "liquid"
+								},
+								{
+									"key": "product_tags",
+									"value": "vegan"
+								},
+								{
+									"key": "price_greater_than",
+									"value": "10.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 6.0 - pesquisa por preço (abaixo de $)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?price_less_than=10.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "price_less_than",
+									"value": "10.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 6.1 - pesquisa por tipo e preço (abaixo de $)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation&price_less_than=10.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "foundation"
+								},
+								{
+									"key": "price_less_than",
+									"value": "10.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 6.2 - pesquisa por marca e preço (abaixo de $)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?brand=colourpop&price_less_than=10.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "colourpop"
+								},
+								{
+									"key": "price_less_than",
+									"value": "10.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 6.3 - pesquisa por categoria e preço (abaixo de $)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_category=liquid&price_less_than=10.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_category",
+									"value": "liquid"
+								},
+								{
+									"key": "price_less_than",
+									"value": "10.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 6.4 - pesquisa por tag e preço (abaixo de $)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_tags=vegan&price_less_than=10.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_tags",
+									"value": "vegan"
+								},
+								{
+									"key": "price_less_than",
+									"value": "10.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 6.5 - pesquisa por tipo, marca, categoria, tag e preço (abaixo de $)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=lip_liner&brand=colourpop&product_category=pencil&product_tags=vegan&price_less_than=10.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "lip_liner"
+								},
+								{
+									"key": "brand",
+									"value": "colourpop"
+								},
+								{
+									"key": "product_category",
+									"value": "pencil"
+								},
+								{
+									"key": "product_tags",
+									"value": "vegan"
+								},
+								{
+									"key": "price_less_than",
+									"value": "10.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 7.0 - pesquisa por avaliação positiva",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?rating_greater_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "rating_greater_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 7.1 - pesquisa por tipo e avaliação positiva",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation&rating_greater_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "foundation"
+								},
+								{
+									"key": "rating_greater_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 7.2 - pesquisa por marca e avaliação positiva",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?brand=nyx&rating_greater_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "nyx"
+								},
+								{
+									"key": "rating_greater_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 7.3 - pesquisa por categoria e avaliação positiva",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_category=cream&rating_greater_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_category",
+									"value": "cream"
+								},
+								{
+									"key": "rating_greater_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 7.4 - pesquisa por tag e avaliação positiva",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_tags=vegan&rating_greater_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_tags",
+									"value": "vegan"
+								},
+								{
+									"key": "rating_greater_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 7.5 - pesquisa por preço (acima de $)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?price_greater_than=10.0&rating_greater_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "price_greater_than",
+									"value": "10.0"
+								},
+								{
+									"key": "rating_greater_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 7.6 - pesquisa por preço (abaixo de $) e avaliação positiva",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?price_less_than=10.0&rating_greater_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "price_less_than",
+									"value": "10.0"
+								},
+								{
+									"key": "rating_greater_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 7.7 - pesquisa por tipo, marca, categoria, tag, preço (acima de $) e avaliação postiva",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=blush&brand=physicians formula&product_category=powder&product_tags=Gluten Free&price_greater_than=10.0&rating_greater_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "blush"
+								},
+								{
+									"key": "brand",
+									"value": "physicians formula"
+								},
+								{
+									"key": "product_category",
+									"value": "powder"
+								},
+								{
+									"key": "product_tags",
+									"value": "Gluten Free"
+								},
+								{
+									"key": "price_greater_than",
+									"value": "10.0"
+								},
+								{
+									"key": "rating_greater_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 7.8 - pesquisa por tipo, marca, categoria, tag, preço (abaixo de $) e avaliação positiva",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=lipstick&brand=burt's bees&product_category=lipstick&product_tags=Natural&price_less_than=10.0&rating_greater_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "lipstick"
+								},
+								{
+									"key": "brand",
+									"value": "burt's bees"
+								},
+								{
+									"key": "product_category",
+									"value": "lipstick"
+								},
+								{
+									"key": "product_tags",
+									"value": "Natural"
+								},
+								{
+									"key": "price_less_than",
+									"value": "10.0"
+								},
+								{
+									"key": "rating_greater_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 8.0 - pesquisa por avaliação negativa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?rating_less_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "rating_less_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 8.1 - pesquisa por tipo e avaliação negativa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation&rating_less_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "foundation"
+								},
+								{
+									"key": "rating_less_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 8.2 - pesquisa por marca e avaliação negativa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?brand=nyx&rating_less_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "nyx"
+								},
+								{
+									"key": "rating_less_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 8.3 - pesquisa por categoria e avaliação negativa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_category=cream&rating_less_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_category",
+									"value": "cream"
+								},
+								{
+									"key": "rating_less_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 8.4 - pesquisa por tag e avaliação negativa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_tags=vegan&rating_less_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_tags",
+									"value": "vegan"
+								},
+								{
+									"key": "rating_less_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 8.5 - pesquisa por preço (acima de $) e avaliação negativa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?price_greater_than=10.0&rating_less_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "price_greater_than",
+									"value": "10.0"
+								},
+								{
+									"key": "rating_less_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 8.6 - pesquisa por preço (abaixo de $) e avaliação negativa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?price_less_than=10.0&rating_less_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "price_less_than",
+									"value": "10.0"
+								},
+								{
+									"key": "rating_less_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 8.7 - pesquisa por tipo, marca, categoria, tag, preço (acima de $) e avaliação negativa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=lipstick&brand=burt's bees&product_category=lipstick&product_tags=Natural&price_greater_than=8.00&rating_less_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "lipstick"
+								},
+								{
+									"key": "brand",
+									"value": "burt's bees"
+								},
+								{
+									"key": "product_category",
+									"value": "lipstick"
+								},
+								{
+									"key": "product_tags",
+									"value": "Natural"
+								},
+								{
+									"key": "price_greater_than",
+									"value": "8.00"
+								},
+								{
+									"key": "rating_less_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caso de teste 8.8 - pesquisa por tipo, marca, categoria, tag, preço (abaixo de $) e avaliação negativa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=lipstick&brand=dalish&product_category=lipstick&product_tags=Natural&price_less_than=25.00&rating_less_than=4.0",
+							"protocol": "https",
+							"host": [
+								"makeup-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "lipstick"
+								},
+								{
+									"key": "brand",
+									"value": "dalish"
+								},
+								{
+									"key": "product_category",
+									"value": "lipstick"
+								},
+								{
+									"key": "product_tags",
+									"value": "Natural"
+								},
+								{
+									"key": "price_less_than",
+									"value": "25.00"
+								},
+								{
+									"key": "rating_less_than",
+									"value": "4.0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {",
+							"    pm.response.to.have.status(200)",
+							"})",
+							"",
+							"pm.test(\"Status test error\", () => {",
+							"    pm.expect(pm.response.code).to.eql(200)",
+							"})",
+							"",
+							"pm.test(\"Response time is less than 1000ms\", () => {",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000)",
+							"})",
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
